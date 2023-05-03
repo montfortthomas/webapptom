@@ -11,6 +11,8 @@ pipeline{
    stage('create'){
     steps {
      sh "touch test1.txt"
+     sh "pwd"
+     sh "ls"
     }
    }
   
