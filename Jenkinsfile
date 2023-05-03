@@ -1,12 +1,19 @@
 pipeline{
  agent any
   stages {
-    stage('') {
+    stage('loginn') {
       steps{
          sshagent(['Tomcatt']) {
     // some block
 }
       }
     }
-}
+   stage('create'){
+    steps {
+     sh "touch test1.txt"
+    }
+   }
+  
+  }
+ 
 }
