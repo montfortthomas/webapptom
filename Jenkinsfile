@@ -1,5 +1,5 @@
 pipeline{
- agent any
+ agent 3.110.134.95
   stages {
     stage('loginn') {
       steps{
