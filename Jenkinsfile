@@ -3,7 +3,10 @@ pipeline{
   stages {
     stage('') {
       steps{
-          sh "pwd" 
+         sshagent(['Tomcatt']) {
+    // some block
+}
       }
     }
+}
 }
